@@ -1,0 +1,66 @@
+
+/* card */
+.card {
+    background: #fffaf3;
+    width: 350px;
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+/* Titulo Principal */
+#login h2 {
+    color: #6f4e37;
+    margin-bottom: 5px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* Labels */
+label {
+    text-align: left;
+    color: #5a3e2b;
+}
+/* Inputs */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #c2a27c;
+    outline: none;
+    font-size: 15px;
+}
+/* Boton */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 100px;
+    background: #6f4e37;
+    color: #fff;
+    font-size: 16px;
+}
+/* Imagen */
+.icon
+{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background: url("../../img/coffee-97.gif") no-repeat center;
+    background-size: contain;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+

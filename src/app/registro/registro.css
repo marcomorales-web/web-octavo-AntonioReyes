@@ -1,0 +1,89 @@
+    /* Contenedor principal */
+    .card {
+    width: 380px;
+    padding: 30px 25px;
+    border-radius: 22px;
+    background: #fffaf3;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    animation: aparecer 0.6s ease;
+    }
+
+    /* Animación suave */
+    @keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    /* Ícono decorativo */
+    .icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6f4e37, #d2b48c);
+    }
+
+    /* Título */
+    #registro h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #6f4e37;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    }
+
+    /* Formulario */
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    }
+
+    /* Etiquetas */
+    label {
+    font-size: 14px;
+    color: #5a3e2b;
+    margin-top: 6px;
+    }
+
+    /* Inputs */
+    input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #c2a27c;
+    font-size: 15px;
+    transition: 0.3s;
+    }
+
+    input:focus {
+    outline: none;
+    border-color: #6f4e37;
+    box-shadow: 0 0 0 2px rgba(111, 78, 55, 0.25);
+    }
+
+    /* Botón */
+    button {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(135deg, #6f4e37, #5a3f2c);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+}
