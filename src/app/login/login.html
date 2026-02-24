@@ -1,22 +1,61 @@
+    <div class="page">
 
-<div class="page">
-    <div class="card">
-        <div class="icon"></div>
+    <div class="card animate__animated animate__fadeInUp">
+
+        <div class="icon animate__animated animate__zoomIn animate__delay-1s"></div>
+
         <section id="login">
-        <h2>Cafetería</h2>
+
+        <h2 class="animate__animated animate__fadeInDown animate__delay-1s">
+            Cafetería
+        </h2>
+
         <form>
-            <label for="correo">Correo:</label>
-            <input type="text" id="correo" placeholder="Correo" required>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" placeholder="Contraseña" required>
-            <button type="submit">Entrar</button>
+
+            <label for="correo" class="animate__animated animate__fadeInLeft animate__delay-1s">
+            Correo:
+            </label>
+            <input
+            class="animate__animated animate__fadeInLeft animate__delay-1s"
+            type="text"
+            id="correo"
+            placeholder="Correo"
+            >
+
+            <label for="contrasena" class="animate__animated animate__fadeInLeft animate__delay-2s">
+            Contraseña:
+            </label>
+            <input
+            class="animate__animated animate__fadeInLeft animate__delay-2s"
+            type="password"
+            id="contrasena"
+            placeholder="Contraseña"
+            >
+
+            <button
+            class="animate__animated animate__fadeInUp animate__delay-3s"
+            type="submit"
+            routerLink="/home"
+            >
+            Entrar
+            </button>
+
         </form>
+
         <br>
-        <div class="links">
-            <a routerLink="/registro">Regístrate</a>
+
+        <div class="links animate__animated animate__fadeIn animate__delay-4s">
+
+            <span class="hint">¿No tienes cuenta?</span>
             <br>
-            <a routerLink="/Recuperar contraseña">Recuperar contraseña</a>
+            <a routerLink="/registro" class="register">Crea una aquí</a>
+            <br><br>
+            <a routerLink="/recuperar">¿Olvidaste tu contraseña?</a>
+
         </div>
+
         </section>
+
     </div>
-</div>
+
+    </div>

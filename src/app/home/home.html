@@ -1,0 +1,66 @@
+    <!-- BOTÓN MENÚ -->
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+
+    <!-- MENÚ LATERAL -->
+    <nav [class.active]="menuAbierto">
+    <div class="profile-section">
+        <h3>Mi Cuenta</h3>
+    </div>
+    <ul>
+        <li><a routerLink="/perfil">Perfil</a></li>
+        <li><a routerLink="/pedidos">Mis Pedidos</a></li>
+        <li><a routerLink="/login">Cerrar sesión</a></li>
+    </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main-content" [class.full-width]="!menuAbierto">
+    <!-- HERO -->
+    <section class="hero animate__animated animate__fadeIn">
+        <div class="overlay">
+        <h1 class="animate__animated animate__fadeInDownBig">Bienvenido pide tu café</h1>
+        <p class="animate__animated animate__fadeInUp">El mejor café</p>
+        </div>
+    </section>
+    <!-- PRODUCTOS -->
+    <section class="products">
+        <h2 class="animate__animated animate__fadeIn animate__delay-1s">Nuestras Especialidades</h2>
+        <div class="cards">
+        <div class="card animate__animated animate__zoomIn animate__delay-2s">
+            <img src="../../img/pexels-coffee-1869772_1920.jpg" alt="Espresso">
+            <div class="card-content">
+            <h3>Espresso</h3>
+            <p>Intenso, concentrado y lleno de aroma.</p>
+            </div>
+        </div>
+        <div class="card animate__animated animate__zoomIn animate__delay-3s">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Latte">
+            <div class="card-content">
+            <h3>Latte</h3>
+            <p>Equilibrio perfecto entre café y leche.</p>
+            </div>
+        </div>
+        <div class="card animate__animated animate__zoomIn animate__delay-4s">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Capuccino">
+            <div class="card-content">
+            <h3>Capuccino</h3>
+            <p>Espuma cremosa con espresso intenso.</p>
+            </div>
+        </div>
+        <div class="card animate__animated animate__zoomIn animate__delay-5s">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Americano">
+            <div class="card-content">
+            <h3>Americano</h3>
+            <p>Suave, ligero y tradicional.</p>
+            </div>
+        </div>
+        <div class="card animate__animated animate__zoomIn animate__delay-6s">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Mocca">
+            <div class="card-content">
+            <h3>Mocca</h3>
+            <p>Café con chocolate y leche cremosa.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    </div>

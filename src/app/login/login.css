@@ -1,66 +1,94 @@
-
-/* card */
+/* CONTENEDOR CARD */
 .card {
     background: #fffaf3;
-    width: 350px;
+    width: 100%;              /* ocupa todo el ancho disponible */
+    max-width: 350px;         /* máximo en pantallas grandes */
     padding: 30px 25px;
     text-align: center;
     border-radius: 20px;
+    margin: 20px;             /* evita que pegue en bordes */
 }
-/* Titulo Principal */
+
+/* TITULO */
 #login h2 {
     color: #6f4e37;
     margin-bottom: 5px;
     font-size: 28px;
     letter-spacing: 1px;
 }
-/* Formulario */
+
+/* FORMULARIO */
 form {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-/* Labels */
+
+/* LABELS */
 label {
     text-align: left;
     color: #5a3e2b;
+    font-size: 14px;
 }
-/* Inputs */
+
+/* INPUTS */
 input {
+    width: 100%;              /* importante para responsive */
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #c2a27c;
     outline: none;
     font-size: 15px;
+    box-sizing: border-box;   /* evita que se desborde */
 }
-/* Boton */
+
+/* BOTON */
 button {
+    width: 100%;              /* ocupa todo el ancho */
     margin-top: 10px;
     padding: 12px;
     border: none;
-    border-radius: 100px;
+    border-radius: 6px;
     background: #6f4e37;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
-/* Imagen */
-.icon
-{
+
+/* IMAGEN */
+.icon {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 150px;
-    background: url("../../img/coffee-97.gif") no-repeat center;
+    width: 180px;
+    height: 180px;
+    background: url("../../img/coffe.png") no-repeat center;
     background-size: contain;
 }
 
+/* 📱 AJUSTES PARA CELULARES */
 @media (max-width: 480px) {
+
     .card {
-        padding: 25px 20px;
+        padding: 20px 15px;
+        border-radius: 15px;
     }
 
-    h2 {
+    #login h2 {
         font-size: 22px;
     }
-}
 
+    input {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .icon {
+        width: 140px;
+        height: 140px;
+    }
+}

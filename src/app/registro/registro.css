@@ -5,19 +5,6 @@
     border-radius: 22px;
     background: #fffaf3;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-    animation: aparecer 0.6s ease;
-    }
-
-    /* Animación suave */
-    @keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
     }
 
     /* Ícono decorativo */
@@ -58,7 +45,6 @@
     border-radius: 10px;
     border: 1px solid #c2a27c;
     font-size: 15px;
-    transition: 0.3s;
     }
 
     input:focus {
@@ -78,12 +64,31 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
     }
 
-    /* Responsive */
     @media (max-width: 480px) {
     .card {
         width: 90%;
     }
-}
+    }
+
+    .login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b4b2a;
+    }
+
+    .login-link span {
+    margin-right: 6px;
+    }
+
+    .login-link a {
+    color: #5a3a1f;
+    font-weight: 600;
+    text-decoration: none;
+    }
+
+    .login-link a:hover {
+    text-decoration: underline;
+    }
