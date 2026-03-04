@@ -1,18 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css']
 })
 export class Home {
-
-  menuAbierto: boolean = false;
-
-  toggleMenu() {
-    this.menuAbierto = !this.menuAbierto;
-  }
-
 }

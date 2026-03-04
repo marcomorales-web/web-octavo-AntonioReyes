@@ -5,11 +5,16 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Arial, sans-serif;
-
     background: linear-gradient(
         120deg,
-        #2b190d,
-        #5a3a1f,
-        #bfa07a
+        #b59078,
+        #b59f8e,
+        #fffaf3
     );
 }
+
+
+html,body{
+    overscroll-behavior: none;
+}
+

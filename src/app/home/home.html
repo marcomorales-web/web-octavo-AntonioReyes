@@ -1,66 +1,59 @@
-    <!-- BOTÓN MENÚ -->
-    <button class="menu-btn" (click)="toggleMenu()">☰</button>
-
-    <!-- MENÚ LATERAL -->
-    <nav [class.active]="menuAbierto">
-    <div class="profile-section">
-        <h3>Mi Cuenta</h3>
-    </div>
-    <ul>
-        <li><a routerLink="/perfil">Perfil</a></li>
-        <li><a routerLink="/pedidos">Mis Pedidos</a></li>
-        <li><a routerLink="/login">Cerrar sesión</a></li>
-    </ul>
-    </nav>
-
+<!-- CONTENEDOR GENERAL -->
+<div>
     <!-- CONTENIDO PRINCIPAL -->
-    <div class="main-content" [class.full-width]="!menuAbierto">
-    <!-- HERO -->
-    <section class="hero animate__animated animate__fadeIn">
-        <div class="overlay">
-        <h1 class="animate__animated animate__fadeInDownBig">Bienvenido pide tu café</h1>
-        <p class="animate__animated animate__fadeInUp">El mejor café</p>
-        </div>
-    </section>
-    <!-- PRODUCTOS -->
-    <section class="products">
-        <h2 class="animate__animated animate__fadeIn animate__delay-1s">Nuestras Especialidades</h2>
-        <div class="cards">
-        <div class="card animate__animated animate__zoomIn animate__delay-2s">
-            <img src="../../img/pexels-coffee-1869772_1920.jpg" alt="Espresso">
-            <div class="card-content">
-            <h3>Espresso</h3>
-            <p>Intenso, concentrado y lleno de aroma.</p>
-            </div>
-        </div>
-        <div class="card animate__animated animate__zoomIn animate__delay-3s">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Latte">
-            <div class="card-content">
-            <h3>Latte</h3>
-            <p>Equilibrio perfecto entre café y leche.</p>
-            </div>
-        </div>
-        <div class="card animate__animated animate__zoomIn animate__delay-4s">
-            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Capuccino">
-            <div class="card-content">
-            <h3>Capuccino</h3>
-            <p>Espuma cremosa con espresso intenso.</p>
-            </div>
-        </div>
-        <div class="card animate__animated animate__zoomIn animate__delay-5s">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Americano">
-            <div class="card-content">
-            <h3>Americano</h3>
-            <p>Suave, ligero y tradicional.</p>
-            </div>
-        </div>
-        <div class="card animate__animated animate__zoomIn animate__delay-6s">
-            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Mocca">
-            <div class="card-content">
-            <h3>Mocca</h3>
-            <p>Café con chocolate y leche cremosa.</p>
-            </div>
-        </div>
-        </div>
-    </section>
+    <main class="main-content">
+        <!-- HERO -->
+<section class="hero">
+    <img 
+        src="https://wallpaperaccess.com/full/9343976.jpg" 
+        alt="Fondo café"
+        class="hero-img"
+    >
+    <div class="overlay">
+        <h1>Bienvenido pide tu café</h1>
+        <p>El mejor café del mundo</p>
     </div>
+</section>
+        <!-- PRODUCTOS -->
+        <section class="products">
+            <h2>Nuestras Especialidades</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.rV5J-0y0QvdnpdnyQSjJcwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="card-content">
+                        <h3>Espresso</h3>
+                        <p>Intenso, concentrado y lleno de aroma.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+                    <div class="card-content">
+                        <h3>Latte</h3>
+                        <p>Equilibrio perfecto entre café y leche.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.sORUCLQs6IFavbrcEWRPgAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="card-content">
+                        <h3>Capuccino</h3>
+                        <p>Espuma cremosa con espresso intenso.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.ZxnshrqKgOh5och8iYOdQwHaFH?rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="card-content">
+                        <h3>Americano</h3>
+                        <p>Suave, ligero y tradicional.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+                    <div class="card-content">
+                        <h3>Mocca</h3>
+                        <p>Café con chocolate y leche cremosa.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
