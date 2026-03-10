@@ -6,9 +6,7 @@
     padding: 0 20px;      
     height: 80px;         
     color: white;
-    
 }
-
 ul {
     list-style: none;
     display: flex;
@@ -28,14 +26,11 @@ ul li a {
     display: flex;
     align-items: center;
 }
-
 /* responsive */
 @media (max-width: 768px) {
-
     .toggle {
         display: block;
     }
-
     ul {
         position: absolute;
         top: 60px;
@@ -46,7 +41,6 @@ ul li a {
         padding: 15px;
         display: none;
     }
-
     ul.open {
     display: flex;
 }

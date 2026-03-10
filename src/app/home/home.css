@@ -4,9 +4,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
-    border-radius: 2%;
 }
-
 .overlay {
     position: absolute;
     top: 50%; 
@@ -30,7 +28,6 @@
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
-
 /* card */
 .card {
     background: #fff;
@@ -38,7 +35,6 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 /* imagen card */
 .card img {
     width: 100%;
@@ -46,7 +42,6 @@
     object-fit: cover;
     display: block;
 }
-
 /* contenido card */
 .card-content {
     padding: 15px;

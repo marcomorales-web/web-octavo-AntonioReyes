@@ -1,12 +1,12 @@
 /* CONTENEDOR CARD */
 .card {
     background: #fffaf3;
-    width: 100%;              /* ocupa todo el ancho disponible */
-    max-width: 350px;         /* máximo en pantallas grandes */
+    width: 100%;             
+    max-width: 350px;       
     padding: 30px 25px;
     text-align: center;
     border-radius: 20px;
-    margin: 20px;             /* evita que pegue en bordes */
+    margin: 20px;            
 }
 
 /* TITULO */
@@ -33,18 +33,18 @@ label {
 
 /* INPUTS */
 input {
-    width: 100%;              /* importante para responsive */
+    width: 100%;              
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #c2a27c;
     outline: none;
     font-size: 15px;
-    box-sizing: border-box;   /* evita que se desborde */
+    box-sizing: border-box;   
 }
 
 /* BOTON */
 button {
-    width: 100%;              /* ocupa todo el ancho */
+    width: 100%;             
     margin-top: 10px;
     padding: 12px;
     border: none;
@@ -61,7 +61,7 @@ button {
     margin: auto;
     width: 180px;
     height: 180px;
-    background: url("../../img/coffe.png") no-repeat center;
+    background: url("../../assets/img/coffe.png") no-repeat center;
     background-size: contain;
 }
 
