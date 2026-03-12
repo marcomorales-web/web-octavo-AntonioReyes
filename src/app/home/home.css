@@ -5,16 +5,6 @@
     width: 100%;
     max-width: 100%;
 }
-.overlay {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: rgb(0, 0, 0); 
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
 .products {
     margin: 30px;
 }
@@ -45,4 +35,74 @@
 /* contenido card */
 .card-content {
     padding: 15px;
+}
+/* CONTENEDOR HERO */
+.hero-container{
+position:relative;
+width:100%;
+}
+
+
+/* texto encima de la imagen */
+.overlay {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+color:rgb(144, 80, 34);
+font-size:32px;
+font-weight:bold;
+text-align:center;
+width:90%;
+z-index:2;
+}
+
+/* ====================== */
+/* RESPONSIVE */
+/* ====================== */
+
+/* tablets */
+@media (max-width:768px){
+
+.overlay{
+font-size:24px;
+}
+
+.h2{
+font-size:28px;
+}
+
+.card img{
+height:180px;
+}
+
+.products{
+margin:30px 4%;
+}
+
+}
+
+/* celulares */
+@media (max-width:480px){
+
+.overlay{
+font-size:18px;
+}
+
+.h2{
+font-size:22px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:160px;
+}
+
+.products{
+margin:20px 15px;
+}
+
 }

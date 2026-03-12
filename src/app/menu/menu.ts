@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Navbar } from "../navbar/navbar";
+import { PedidosService } from '../services/pedidos';
 
 @Component({
   selector: 'app-menu',
@@ -8,5 +9,15 @@ import { Navbar } from "../navbar/navbar";
   styleUrl: './menu.css',
 })
 export class Menu {
+  
+  constructor(private pedidosService: PedidosService){}
+  agregarPedido(cafe:string, precio:number){
+    const pedido = {
+      cafe: cafe,
+      precio: precio
+    }
+    this.pedidosService.agregarPedido(pedido);
+    console.log("Pedido agregado", pedido);
 
+  }
 }

@@ -2,11 +2,12 @@
     <app-navbar></app-navbar> 
 <main class="main-content">
 <section class="hero">
-    <img 
-        src="https://wallpaperaccess.com/full/9343976.jpg" alt="Fondo café" class="hero-img">
-    <div class="overlay">
-        <h1>Bienvenido pide tu café</h1>
-        <p>El mejor café del mundo</p>
+    <div class="hero-container">
+        <img src="https://wallpaperaccess.com/full/9343976.jpg" alt="Fondo café" class="hero-img">
+        <div class="overlay">
+            <h1>Bienvenido a nuestro café</h1>
+            <p>El mejor café del mundo</p>
+        </div>
     </div>
 </section>
         <!-- PRODUCTOS -->
@@ -49,6 +50,9 @@
                     </div>
                 </article>
             </div>
+        <div *ngIf="resultado">
+        <pre>{{resultado | json}}</pre>
+        </div>
         </section>
     </main>
 </div>

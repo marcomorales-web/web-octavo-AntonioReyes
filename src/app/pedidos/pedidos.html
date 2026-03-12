@@ -2,7 +2,6 @@
 <div class="container">
 	<!-- code here -->
 	<div class="card">
-		<img src="../../assets/img/Coffe_pedidos.jpg" alt="coffe">
 		<div class="card-image">	
 			<h2 class="card-heading">
 				Ordena
@@ -22,6 +21,13 @@
 				<input type="text" class="input-field" required/>
 				<label class="input-label">Comunidad</label>
 			</div>
+			
+			<div class="mos_coffee">
+			<div *ngFor="let pedido of pedidos">
+			<p>{{pedido.cafe}} - ${{pedido.precio}}</p>
+			</div>
+			</div>
+
 			<div class="action">
 				<button class="action-button">Ordenar</button>
 			</div>

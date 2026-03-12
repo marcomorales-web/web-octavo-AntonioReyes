@@ -1,47 +1,65 @@
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    background: #222;
-    padding: 0 20px;      
-    height: 80px;         
-    color: white;
+/* NAVBAR */
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+padding:0 20px;
+height:80px;
+color:white;
+position:relative; /* importante para el menú absoluto */
 }
-ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-    align-items: center;  
+
+.brand h2{
+margin:0;
 }
-ul li {
-    display: flex;
-    align-items: center; 
+
+/* MENU */
+ul{
+list-style:none;
+display:flex;
+gap:25px;
+margin:0;
+padding:0;
+align-items:center;
 }
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
+
+/* enlaces */
+ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
 }
-/* responsive */
-@media (max-width: 768px) {
-    .toggle {
-        display: block;
-    }
-    ul {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #222;
-        flex-direction: column;
-        width: 200px;
-        padding: 15px;
-        display: none;
-    }
-    ul.open {
-    display: flex;
+
+/* BOTON HAMBURGUESA */
+.toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
+
+.toggle{
+display:block;
+}
+
+ul{
+position:absolute;
+top:80px;
+right:0;
+background:#222;
+flex-direction:column;
+width:220px;
+padding:20px;
+gap:15px;
+display:none; /* oculto por defecto */
+z-index:1000; /* asegurarse de que esté encima */
+}
+
+ul.open{
+display:flex;
+}
+
 }

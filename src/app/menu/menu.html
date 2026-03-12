@@ -15,9 +15,9 @@
     Extracción: 25–30 s, 9 bares, molienda fina <br>
     Perfil: intenso, cuerpo alto, crema densa <br>
     </div>
-    <button class="card-price">$56Mx</button>
+    <button class="button"(click)="agregarPedido('Espresso  Simple',56)">Agregar</button>
+    <div class="card-price">$56Mx </div>
     </div>
-
     <div class="card">
     <div class="card-image">
         <img src="https://cafeish.co/wp-content/uploads/2022/01/6.png.webp">
@@ -26,9 +26,45 @@
         <p class="card-meal-type">Cafe</p>
         <h2 class="card-title">Espresso doble (Doppio)</h2>
         <p class="card-body">Base: 2 shots (50–60 ml) <br>
-                Perfil: más concentración y cafeína</p>
+        Perfil: más concentración y cafeína</p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <button class="button"(click)="agregarPedido('Espresso doble',42)">Agregar</button>
+    <div class="card-price">$42Mx</div>
+    </div>
+    <div class="card">
+    <div class="card-image">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.sORUCLQs6IFavbrcEWRPgAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+    </div>
+    <div class="card-text">
+        <p class="card-meal-type">Cafe</p>
+        <h2 class="card-title">Capuccino</h2>
+        <p class="card-body">Maria Garcia <br> calle 16 de septiembre <br> </p>
+    </div>
+    <div class="card-price">$56Mx</div>
+    </div>
+    <div class="container">
+    <div class="card">
+    <div class="card-image">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.rV5J-0y0QvdnpdnyQSjJcwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+    </div>
+    <div class="card-text">
+        <p class="card-meal-type">Cafe</p>
+        <h2 class="card-title">Espresso</h2>
+        <p class="card-body">Pedido Jase Flores<br>calle 16 de septiembre <br> </p>
+    </div>
+    <div class="card-price">$56Mx</div>
+    </div>
+
+    <div class="card">
+    <div class="card-image">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.ZxnshrqKgOh5och8iYOdQwHaFH?rs=1&pid=ImgDetMain&o=7&rm=3">
+    </div>
+    <div class="card-text">
+        <p class="card-meal-type">Cafe</p>
+        <h2 class="card-title">Americano</h2>
+        <p class="card-body">Adolfo Javier Cruz Hernandez <br> Avenida Tecnologico <br> </p>
+    </div>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="card">
@@ -40,7 +76,7 @@
         <h2 class="card-title">Capuccino</h2>
         <p class="card-body">Maria Garcia <br> calle 16 de septiembre <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="container">
@@ -53,7 +89,7 @@
         <h2 class="card-title">Espresso</h2>
         <p class="card-body">Pedido Jase Flores<br>calle 16 de septiembre <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="card">
@@ -65,7 +101,7 @@
         <h2 class="card-title">Americano</h2>
         <p class="card-body">Adolfo Javier Cruz Hernandez <br> Avenida Tecnologico <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="card">
@@ -77,7 +113,7 @@
         <h2 class="card-title">Capuccino</h2>
         <p class="card-body">Maria Garcia <br> calle 16 de septiembre <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="container">
@@ -90,9 +126,8 @@
         <h2 class="card-title">Espresso</h2>
         <p class="card-body">Pedido Jase Flores<br>calle 16 de septiembre <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
-
     <div class="card">
     <div class="card-image">
         <img src="https://tse1.mm.bing.net/th/id/OIP.ZxnshrqKgOh5och8iYOdQwHaFH?rs=1&pid=ImgDetMain&o=7&rm=3">
@@ -102,7 +137,7 @@
         <h2 class="card-title">Americano</h2>
         <p class="card-body">Adolfo Javier Cruz Hernandez <br> Avenida Tecnologico <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
+    <div class="card-price">$56Mx</div>
     </div>
 
     <div class="card">
@@ -114,43 +149,7 @@
         <h2 class="card-title">Capuccino</h2>
         <p class="card-body">Maria Garcia <br> calle 16 de septiembre <br> </p>
     </div>
-    <button class="card-price">$56Mx</button>
-    </div>
-
-    <div class="container">
-    <div class="card">
-    <div class="card-image">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.rV5J-0y0QvdnpdnyQSjJcwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
-    </div>
-    <div class="card-text">
-        <p class="card-meal-type">Cafe</p>
-        <h2 class="card-title">Espresso</h2>
-        <p class="card-body">Pedido Jase Flores<br>calle 16 de septiembre <br> </p>
-    </div>
-    <button class="card-price">$56Mx</button>
-    </div>
-    <div class="card">
-    <div class="card-image">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.ZxnshrqKgOh5och8iYOdQwHaFH?rs=1&pid=ImgDetMain&o=7&rm=3">
-    </div>
-    <div class="card-text">
-        <p class="card-meal-type">Cafe</p>
-        <h2 class="card-title">Americano</h2>
-        <p class="card-body">Adolfo Javier Cruz Hernandez <br> Avenida Tecnologico <br> </p>
-    </div>
-    <button class="card-price">$56Mx</button>
-    </div>
-
-    <div class="card">
-    <div class="card-image">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.sORUCLQs6IFavbrcEWRPgAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
-    </div>
-    <div class="card-text">
-        <p class="card-meal-type">Cafe</p>
-        <h2 class="card-title">Capuccino</h2>
-        <p class="card-body">Maria Garcia <br> calle 16 de septiembre <br> </p>
-    </div>
-    <button class="card-price">$56Mx</button> 
+    <div class="card-price">$56Mx</div>
     </div>
 </div>
 

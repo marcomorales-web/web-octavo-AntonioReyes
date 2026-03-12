@@ -1,60 +1,107 @@
-    /* Tarjeta */
-    .card {
-    background: #fff;
-    padding: 2.5rem;
-    width: 360px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,.3);
-    }
+/* Tarjeta */
+.card {
+background: #fff;
+padding: 2.5rem;
+width: 360px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
 
-    /* Textos */
-    h1 {
-    color: #4b2e1e;
-    margin-bottom: .5rem;
-    }
+/* Textos */
+h1 {
+color: #4b2e1e;
+margin-bottom: .5rem;
+}
 
-    p {
-    font-size: .9rem;
-    color: #777;
-    margin-bottom: 1.5rem;
-    }
+p {
+font-size: .9rem;
+color: #777;
+margin-bottom: 1.5rem;
+}
 
-    /* Input */
-    input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    outline: none;
-    margin-bottom: 1rem;
-    }
+/* Input */
+input {
+width: 100%;
+padding: 12px;
+border-radius: 10px;
+border: 1px solid #ccc;
+outline: none;
+margin-bottom: 1rem;
+}
 
-    input:focus {
-    border-color: #6f4e37;
-    }
+input:focus {
+border-color: #6f4e37;
+}
 
-    /* Botón */
-    button {
-    width: 100%;
-    padding: 12px;
-    background: #6f4e37;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    }
+/* Botón */
+button {
+width: 100%;
+padding: 12px;
+background: #6f4e37;
+border: none;
+border-radius: 10px;
+color: #fff;
+font-size: 1rem;
+cursor: pointer;
+}
 
-    button:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,.3);
-    }
+button:hover {
+box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
 
-    /* Volver */
-    .back {
-    display: block;
-    margin-top: 1.2rem;
-    text-decoration: none;
-    color: #6f4e37;
-    font-size: .85rem;
-    }
+/* Volver */
+.back {
+display: block;
+margin-top: 1.2rem;
+text-decoration: none;
+color: #6f4e37;
+font-size: .85rem;
+}
+
+
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
+
+/* TABLET */
+@media (max-width: 768px){
+
+.card{
+max-width: 90%;
+padding: 2rem;
+}
+
+h1{
+font-size: 24px;
+}
+
+}
+
+/* CELULAR */
+@media (max-width: 480px){
+
+.card{
+padding: 1.5rem;
+border-radius: 15px;
+}
+
+h1{
+font-size: 20px;
+}
+
+p{
+font-size: .8rem;
+}
+
+input{
+padding: 10px;
+font-size: 14px;
+}
+
+button{
+padding: 10px;
+font-size: 14px;
+}
+
+}

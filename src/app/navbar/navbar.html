@@ -1,11 +1,18 @@
 <nav class="nav">
-    <div class="brand">
-        <h2>Coffee</h2>
-    </div>
-    <ul>
-        <li><a routerLink="/home" routerLinkActive="activate" >Home</a></li>
-        <li><a routerLink="/menu" routerLinkActive="activate">Menu</a></li>
-        <li><a routerLink="/pedidos" routerLinkActive="activate">Pedidos</a></li>
-        <li><a routerLink="/login" routerLinkActive="activate">Cerrar Sesión</a></li>
-    </ul>
+
+<div class="brand">
+    <h2>Coffee</h2>
+</div>
+
+<div class="toggle" (click)="menuAbierto = !menuAbierto">
+    ☰
+</div>
+
+<ul [class.open]="menuAbierto">
+    <li><a routerLink="/home" (click)="menuAbierto=false">Home</a></li>
+    <li><a routerLink="/menu" (click)="menuAbierto=false">Menu</a></li>
+    <li><a routerLink="/pedidos" (click)="menuAbierto=false">Pedidos</a></li>
+    <li><a routerLink="/login" (click)="menuAbierto=false">Cerrar Sesión</a></li>
+</ul>
+
 </nav>
